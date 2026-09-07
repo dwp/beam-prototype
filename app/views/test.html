@@ -1,0 +1,114 @@
+{% extends "layouts/main.html" %}
+
+{% block pageTitle %}
+  Content page template – {{ serviceName }} – GOV.UK Prototype Kit
+{% endblock %}
+
+{% block beforeContent %}
+  {{ govukBackLink({
+    text: "Back",
+    href: "javascript:window.history.back()"
+  }) }}
+{% endblock %}
+
+{% block content %}
+
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+
+      <span class="govuk-caption-l">Good morning,</span>
+      <h1 class="govuk-heading-l">
+        Peter
+      </h1>
+
+      <h2 class="govuk-heading-m">Summary</h2>
+
+      <div class="panel--pale">
+  <ul class="gem-c-cards__list gem-c-cards__list--one-column">
+        <li class="gem-c-cards__list-item">
+          <div class="gem-c-cards__list-item-wrapper">
+            <h3 class="panel--pale__title govuk-body gem-c-cards__description">Messages</h3>
+            <p class="panel--pale__body gem-c-cards__sub-heading govuk-heading-s">
+              <a class="govuk-link gem-c-cards__link gem-print-force-link-styles" href="#">1 new message</a>
+            </p>
+          </div>
+        </li>
+</ul>
+</div>
+
+      <h2 class="govuk-heading-m">Explore support</h2>
+
+      <div class="panel--pale">
+        <div class="gem-c-image-card gem-c-image-card--two-thirds">
+    <div class="gem-c-image-card__text-wrapper">
+        <h3 class="gem-c-image-card__title govuk-heading-s">
+            <a class="gem-c-image-card__title-link govuk-link gem-print-force-link-styles gem-c-image-card__title-link--large-font-size-mobile" href="/find-a-job" data-ga4-index="{&quot;index_link&quot;: 1}">Check what you can get</a>
+        </h3>
+    <div class="gem-c-image-card__description gem-c-image-card__description--large-font-size-mobile">You might be entitled to financial support.</div>
+</div>    
+<figure class="gem-c-image-card__image-wrapper"><img class="gem-c-image-card__image" alt="" loading="lazy" height="90" width="90" src="/beam-prototype/app/assets/piggybank.svg"></figure>
+</div>
+
+    </div>
+
+
+
+      <div>
+      <a class="govuk-link govuk-!-font-weight-bold" href="#" id="right">View</a>
+      <h2 class="govuk-heading-m">Your financial support</h2>
+      </div>
+
+
+            <p>You do not currently get any financial support.</p>
+
+
+
+<div>
+      <a class="govuk-link govuk-!-font-weight-bold" href="#" id="right">View</a>
+      <h2 class="govuk-heading-m">About you</h2>
+</div>
+
+<div class="panel--pale">
+  <ul class="gem-c-cards__list gem-c-cards__list--one-column">
+        <li class="gem-c-cards__list-item">
+          <div class="gem-c-cards__list-item-wrapper">
+            </h3>
+            <h3 class="govuk-body gem-c-cards__description">Notification preference</h3>
+            <p class="gem-c-cards__sub-heading govuk-heading-s">
+              <a class="govuk-link gem-c-cards__link gem-print-force-link-styles" href="#">peter@example.com</a>
+            </p>
+          </div>
+        </li>
+        <li class="gem-c-cards__list-item">
+          <div class="gem-c-cards__list-item-wrapper">
+            </h3>
+            <h3 class="govuk-body gem-c-cards__description">Accessibility needs</h3>
+            <p class="gem-c-cards__sub-heading govuk-heading-s">
+              <a class="govuk-link gem-c-cards__link gem-print-force-link-styles" href="#">None added</a>
+            </p>
+          </div>
+        </li>
+</ul>
+</div>
+      
+
+      <!-- <ul class="gem-c-cards__list gem-c-cards__list--one-column">
+        <li class="gem-c-cards__list-item">
+          <div class="gem-c-cards__list-item-wrapper">
+            <h3 class="gem-c-cards__sub-heading govuk-heading-s">
+              <a class="govuk-link gem-c-cards__link gem-print-force-link-styles" data-ga4-link="{&quot;event_name&quot;:&quot;navigation&quot;,&quot;type&quot;:&quot;homepage&quot;,&quot;index_link&quot;:1,&quot;index_section&quot;:3,&quot;index_section_count&quot;:6,&quot;index_total&quot;:16,&quot;section&quot;:&quot;Services and information&quot;}" href="/browse/benefits">Benefits</a>
+</h3>              <p class="govuk-body gem-c-cards__description">Includes eligibility, appeals, tax credits and Universal Credit</p>
+          </div>
+        </li>
+        <li class="gem-c-cards__list-item">
+          <div class="gem-c-cards__list-item-wrapper">
+            <h3 class="gem-c-cards__sub-heading govuk-heading-s">
+              <a class="govuk-link gem-c-cards__link gem-print-force-link-styles" data-ga4-link="{&quot;event_name&quot;:&quot;navigation&quot;,&quot;type&quot;:&quot;homepage&quot;,&quot;index_link&quot;:2,&quot;index_section&quot;:3,&quot;index_section_count&quot;:6,&quot;index_total&quot;:16,&quot;section&quot;:&quot;Services and information&quot;}" href="/browse/births-deaths-marriages">Births, deaths, marriages and&nbsp;care</a>
+</h3>              <p class="govuk-body gem-c-cards__description">Parenting, civil partnerships, divorce and Lasting Power of Attorney</p>
+          </div>
+        </li>
+</ul> -->
+    </div>
+  </div>
+
+{% endblock %}
