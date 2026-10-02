@@ -602,4 +602,63 @@ color: #fff;
 }
 
 
-//testing copilot
+//gov.uk homepage most viewed list arrows
+
+.homepage-most-viewed-list {
+margin: 0;
+padding: 0;
+list-style: none;
+display: grid;
+grid-template-columns: repeat(2, 1fr);
+list-style: none;
+margin-bottom: 15px;
+}
+
+.homepage-most-viewed-list li {
+  position: relative;
+  margin-bottom: 0px;
+  padding-left: 0px;
+}
+
+.homepage-most-viewed-list__item {
+display: flex;
+align-items: flex-start;
+gap: 12px;
+padding: 0 0 5px;
+}
+
+.homepage-most-viewed-list a {
+  font-family: GDS Transport, arial, sans-serif;
+  font-size: 1.1875rem;
+  line-height: 1.3157894737;
+  font-weight: 700;
+  color: #005ea5;
+}
+
+.gem-c-action-link__svg .gem-c-action-link__icon__circle {
+    fill: #d2e2f1;
+}
+
+.gem-c-action-link__svg .gem-c-action-link__icon__arrow {
+    fill: #000;
+}
+
+.gem-c-action-link__icon {
+    display: table-cell;
+    line-height: 1;
+    width: 36px;
+    flex: 0 0 36px;
+    vertical-align: middle;
+}
+
+/* Stack on smaller screens */
+@media (max-width: 660px) {
+.homepage-most-viewed-list {
+grid-template-columns: 1fr;
+row-gap: 5px;
+}
+}
+
+.border-top-blue-from-desktop {
+        border-top: 4px solid var(--govuk-brand-colour, #1d70b8);
+    }

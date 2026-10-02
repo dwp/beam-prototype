@@ -1,0 +1,35 @@
+//James Delaney file: This tells VS Code to automatically run the kit, which it does with a terminal pane at the bottom of the screen whenever you open the folder to work on it.
+
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "Start Prototype",
+      "type": "shell",
+      "command": "npm run dev",
+      "isBackground": true,
+      "runOptions": {
+        "runOn": "folderOpen"
+      },
+      "group": "none",
+      "problemMatcher": [
+        {
+          "pattern": [
+            {
+              "regexp": ".",
+              "file": 1,
+              "location": 2,
+              "message": 3
+            }
+          ],
+          "background": {
+            "activeOnStart": true,
+            "beginsPattern": ".",
+            "endsPattern": "Listening on"
+          }
+        }
+      ]
+    }
+  ]
+}
+ 
